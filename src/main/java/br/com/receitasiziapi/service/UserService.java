@@ -14,8 +14,8 @@ public class UserService implements IService<UserDto, Integer> {
 
     final UserRepository userRepository;
 
-    public UserService(UserRepository produtoRepository) {
-        this.userRepository = produtoRepository;
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
     }
 
      /**
@@ -26,7 +26,7 @@ public class UserService implements IService<UserDto, Integer> {
      */
     @Override
     public UserDto create(UserDto entity) {
-        log.info("ProdutoService::create");
+        log.info("UserService::create");
         return null;
     }
 
@@ -38,7 +38,7 @@ public class UserService implements IService<UserDto, Integer> {
      */
     @Override
     public UserDto read(Integer id) {
-        log.info("ProdutoService::read(id)");
+        log.info("UserService::read(id)");
         return null;
     }
 
@@ -49,7 +49,7 @@ public class UserService implements IService<UserDto, Integer> {
      */
     @Override
     public List<UserDto> read() {
-        log.info("ProdutoService::read()");
+        log.info("UserService::read()");
         return List.of();
     }
 
