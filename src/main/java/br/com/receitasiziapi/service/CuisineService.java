@@ -75,5 +75,5 @@ public class CuisineService implements IService<CuisineDto, Integer> {
     @Override
     public void delete(Integer id) {
         log.info("CusineService::delete(id)");
-    }
+    }                                
 }
